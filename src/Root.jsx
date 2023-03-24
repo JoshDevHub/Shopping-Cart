@@ -1,3 +1,9 @@
+import Layout from "./Layout";
+
 export default function Root() {
-  return <h1>Welcome to my Coffee Shop</h1>;
+  return (
+    <Layout>
+      <h1>Welcome to my Coffee Shop</h1>
+    </Layout>
+  )
 }

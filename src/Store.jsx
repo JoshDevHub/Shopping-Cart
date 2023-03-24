@@ -1,11 +1,10 @@
-import { Link } from "react-router-dom";
+import Layout from "./Layout";
 
 function Store() {
   return (
-    <div className="App">
+    <Layout>
       <p className="text-red-500">Hello World</p>
-      <Link to="cart">Cart</Link>
-    </div>
+    </Layout>
   )
 }
 
