@@ -1,16 +1,13 @@
-import { useRouteError } from "react-router-dom";
+import Layout from "./Layout";
 
 export default function ErrorPage() {
-  const error = useRouteError();
-  console.error(error);
-
   return (
-    <div className="flex flex-col items-center">
-      <h1 className="text-3xl font-bold mb-4">Oops!</h1>
-      <p className="mb-2">Sorry, an unexpected error has occured.</p>
-      <p className="text-red-500 font-bold">
-        <i>{error.statusText || error.message}</i>
-      </p>
-    </div>
+    <Layout>
+      <div className="flex flex-col items-center">
+        <h1 className="mb-4 mt-3 text-3xl font-bold">Oops!</h1>
+        <h2 className="text-xl font-bold text-red-500">404</h2>
+        <p className="mb-2">This page doesn&apos;t exist</p>
+      </div>
+    </Layout>
   )
 }
