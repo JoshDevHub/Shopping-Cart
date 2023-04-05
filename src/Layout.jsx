@@ -1,5 +1,4 @@
 import Header from "./components/Header";
-import PropTypes from "prop-types";
 
 export default function Layout({ children }) {
   return (
@@ -10,8 +9,4 @@ export default function Layout({ children }) {
       </main>
     </>
   )
-}
-
-Layout.propTypes = {
-  children: PropTypes.element
 }
